@@ -5,54 +5,51 @@ body {
     font-family: Helvetica;
 }
 
-header {
-    margin: 4px;
-    padding: 5px;
-    background: #ffeebb;
-    border: 1px solid #eebb55;
-    border-radius: 7px;
-}
-
-h1 {
-    margin: 4px;
-    padding: 5px;
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#size,
-#generateButton,
-p {
-    font-size: 16px;
-}
-
-header > p {
-    color: #E68B8B;
-}
-
-#size {
-    min-width: 300px;
-}
 
 #grids {
-    
-    background: red;
-    
-    
-    
+    padding:0px;
+    background: black; 
+	
 }
 
+.menu{
+            
+            background-color: #f4f4f4;
+            color: #333;
+            border: 1px solid #aaa;
+            box-shadow: 2px 2px 2px #999;
+            border-radius: 0.2rem;
+            list-style: none;
+            position: fixed;
+        }
+.menu.off{
+            top: -200%;
+            left: -200%;
+        }
+.menu-item{
+            height: 1.5rem;
+            line-height: 1.5rem;
+            font-size: 1rem;
+            font-weight: 100;
+            padding: 0 1rem;
+            cursor: pointer;
+        }
+		
+.menu-item:hover,
+.menu-item:active{
+            color: #000;
+            font-weight: 500;
+        }
+
 .row {
+	
     display: flex;
     flow-direction: row;
 }
 
 .grid {
-    background: #8888bb;
-    color: black;
+    background: white;
+    color: white;
 	
 	max-height:20px;
     border: 1px solid #ccccff;
@@ -61,6 +58,6 @@ header > p {
 
 .grid:hover {
     border-color: #E68B8B;
-    color: #E68B8B;
+    
     cursor: pointer;
 }
