@@ -8,8 +8,6 @@ var active = "cpick--active";
 
 
 $(function() {
-    //generate();
-    //clear();
     logNumber();
 });
 
@@ -91,10 +89,6 @@ function gen2()
         }
 }
 
-
-
-
-//Event delegation
 function logNumber() {
     $("#grids").on("click", ".grid", function() {
         var value = $(this).text();
@@ -105,10 +99,4 @@ function logNumber() {
 	
 	
 	
-}
-
-function clear() {
-    $("#clearButton").on("click", function() {
-        $("#grids").html(" ");
-    });
 }
